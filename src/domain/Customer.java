@@ -32,10 +32,6 @@ public class Customer {
         return cpf;
     }
 
-    public void setCpf(Long cpf) {
-        this.cpf = cpf;
-    }
-
     public Long getPhoneNumber() {
         return phoneNumber;
     }
