@@ -30,7 +30,7 @@ public class CustomerMapDAO implements ICustomerDAO {
         object.setName(customer.getName());
         object.setPhoneNumber(customer.getPhoneNumber());
         object.setAddress(customer.getAddress());
-        object.setHouseNumber(customer.getHouseNumber());
+        object.setAddressNumber(customer.getAddressNumber());
         object.setCity(customer.getCity());
         object.setState(customer.getState());
     }

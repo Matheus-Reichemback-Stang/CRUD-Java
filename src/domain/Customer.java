@@ -6,16 +6,16 @@ public class Customer {
     private Long cpf;
     private Long phoneNumber;
     private String address;
-    private Integer houseNumber;
+    private Integer addressNumber;
     private String city;
     private String state;
 
-    public Customer(String name, Long cpf, Long phoneNumber, String address, Integer houseNumber, String city, String state){
+    public Customer(String name, String cpf, String phoneNumber, String address, String addressNumber, String city, String state){
         this.name = name;
-        this.cpf = cpf;
-        this.phoneNumber = phoneNumber;
+        this.cpf = Long.valueOf(cpf);
+        this.phoneNumber = Long.valueOf(phoneNumber);
         this.address = address;
-        this.houseNumber = houseNumber;
+        this.addressNumber = Integer.valueOf(addressNumber);
         this.city = city;
         this.state = state;
     }
@@ -48,12 +48,12 @@ public class Customer {
         this.address = address;
     }
 
-    public Integer getHouseNumber() {
-        return houseNumber;
+    public Integer getAddressNumber() {
+        return addressNumber;
     }
 
-    public void setHouseNumber(Integer houseNumber) {
-        this.houseNumber = houseNumber;
+    public void setAddressNumber(Integer addressNumber) {
+        this.addressNumber = addressNumber;
     }
 
     public String getCity() {
@@ -70,5 +70,18 @@ public class Customer {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", cpf=" + cpf +
+                ", phoneNumber=" + phoneNumber +
+                ", address='" + address + '\'' +
+                ", addressNumber=" + addressNumber +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                '}';
     }
 }
