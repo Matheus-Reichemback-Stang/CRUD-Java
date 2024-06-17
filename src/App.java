@@ -73,6 +73,7 @@ public class App {
                 String[] cutData = data.split(",");
                 if(cutData.length != 6){
                     JOptionPane.showMessageDialog(null, "Você não digitou os 6 itens citados anteriormente! Portanto a atualização dos dados do Cliente não ocorreu.", "Erro", JOptionPane.ERROR_MESSAGE);
+                    return;
                 }
                 for(int i = 0; i < cutData.length; i++){
                     if(cutData[i].isEmpty() || cutData[i] == null){
@@ -92,7 +93,7 @@ public class App {
                 JOptionPane.showMessageDialog(null, "O Cliente não se encontra no Banco de Dados", "Erro", JOptionPane.ERROR_MESSAGE);
             }
         } catch (Exception e){
-            JOptionPane.showMessageDialog(null, "Você digitou um valor inválido, tente novamente!", "Erro", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Houve algum erro, tente novamente!", "Erro", JOptionPane.ERROR_MESSAGE);
         }
     }
     private static void checkUpdatedNumbers(String[] cutData) {
@@ -122,6 +123,7 @@ public class App {
         String[] cutData = data.split(",");
         if(cutData.length != 7){
             JOptionPane.showMessageDialog(null, "Você não digitou os 7 itens citados anteriormente! Portanto a atualização dos dados do Cliente não ocorreu.", "Erro", JOptionPane.ERROR_MESSAGE);
+            return;
         }
         for(int i = 0; i < cutData.length; i++){
             if(cutData[i].isEmpty() || cutData[i] == null){
