@@ -23,13 +23,13 @@ simulação que liga todas as partes.
  
 ***
  ### Arquivos:
- * IRemain - Interface que tem o objetivo de definir quais Classes podem fazer o processo de CRUD
- * Customer - Classe/Objeto que implementa a interface IRemain
- * IGenericDAO - Interface genérica que aplica os métodos CRUD para genéricos que implementam IRemain
- * GenericMapDAO - Classe abstrata que implementa IGenericDAO
- * ICustomerDAO - Interface que estende IGenericDAO e aplica o tipo Customer
- * CustomerMapDAO - Subclasse que herda de GenericMapDAO com o tipo Customer e implementa ICustomerDAO
- * App - Simulador
+ * **IRemain** - Interface que tem o objetivo de definir quais Classes podem fazer o processo de CRUD.
+ * **Customer** - Classe/Objeto que implementa a interface IRemain.
+ * **IGenericDAO** - Interface genérica que aplica os métodos CRUD para genéricos que implementam IRemain.
+ * **GenericMapDAO** - Classe abstrata que implementa IGenericDAO.
+ * **ICustomerDAO** - Interface que estende IGenericDAO e aplica o tipo Customer.
+ * **CustomerMapDAO** - Subclasse que herda de GenericMapDAO com o tipo Customer e implementa ICustomerDAO.
+ * **App** - Simulador.
    
 ---
 ### Sobre alguns arquivos:
