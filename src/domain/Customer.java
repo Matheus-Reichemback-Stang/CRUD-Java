@@ -28,7 +28,7 @@ public class Customer implements IRemain {
         this.name = name;
     }
 
-    public Long getCpf() {
+    public Long getCode() {
         return cpf;
     }
 
