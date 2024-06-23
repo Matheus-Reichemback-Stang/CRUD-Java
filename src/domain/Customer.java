@@ -1,6 +1,6 @@
 package domain;
 
-public class Customer {
+public class Customer implements IRemain {
 
     private String name;
     private Long cpf;
